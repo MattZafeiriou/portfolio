@@ -42,6 +42,7 @@ body {
 
 .middle a {
     background: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, var(--color) 50%) right;
+    background-color: rgba(0, 0, 0, 0);
     background-size: 200%;
 }
 
@@ -299,6 +300,10 @@ body {
 
 .icon {
     display: flex;
+}
+
+.contact-icons .icon:hover svg {
+    filter: drop-shadow(0 0 5px var(--color));
 }
 
 .contact-text a {
