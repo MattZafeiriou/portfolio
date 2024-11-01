@@ -180,7 +180,7 @@ body {
     flex-direction: column;
 }
 
-.about, .work {
+.about, .work, .contributions {
     margin-left: auto;
     margin-right: auto;
     width: 60vw;
@@ -195,7 +195,7 @@ body {
 }
 
 @media screen and (max-width: 800px){
-    .about, .work, .contact {
+    .about, .work, .contributions, .contact {
         width: 80vw;
     }
 }
@@ -206,7 +206,7 @@ body {
     flex-direction: row;
 }
 
-.about h2, .work h2, .contact h2 {
+.about h2, .work h2, .contributions h2, .contact h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     color: var(--color);
@@ -215,7 +215,7 @@ body {
     flex-shrink: 0;
 }
 
-.about p, .work p, .contact p {
+.about p, .work p, .contributions p, .contact p {
     font-size: 1.2em;
     padding: 2em 3em;
 }
