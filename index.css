@@ -210,7 +210,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     color: var(--color);
-    font-size: 3.5em;
+    font-size: 3em;
     padding-right: .5em;
     flex-shrink: 0;
 }
