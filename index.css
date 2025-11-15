@@ -472,6 +472,28 @@ section {
     background: rgba(148, 163, 184, 0.1);
     border: 1px solid rgba(148, 163, 184, 0.18);
     color: var(--text-200);
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    min-width: 100px;
+    height: 3rem;
+    user-select: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.chip:hover {
+    background: rgba(148, 163, 184, 0.15);
+}
+
+.chip-featured {
+    background: rgba(94, 234, 212, 0.12);
+    border: 1px solid rgba(94, 234, 212, 0.18);
+    color: rgba(148, 250, 230, 0.9);
+}
+
+.chip-featured:hover {
+    background: rgba(94, 234, 212, 0.18);
 }
 
 .project-actions {
@@ -488,6 +510,10 @@ section {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
+}
+
+.text-link:hover {
+    color: var(--accent-500);
 }
 
 .text-link::after {
@@ -643,6 +669,31 @@ section {
     color: var(--text-400);
 }
 
+.education-grid {
+    display: grid;
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.education-card {
+    padding: clamp(1.4rem, 3vw, 1.9rem);
+    border-radius: 22px;
+    background: rgba(14, 23, 41, 0.65);
+    border: 1px solid var(--border-200);
+    box-shadow: 0 20px 55px -40px rgba(14, 23, 41, 0.95);
+    display: grid;
+    gap: 1rem;
+}
+
+.education-dates {
+    font-size: 0. nine5rem;
+    color: var(--text-400);
+}
+
+.education-details {
+    color: var(--accent-400);
+}
+
 @media (max-width: 1100px) {
     .hero-inner {
         grid-template-columns: minmax(0, 1fr);
@@ -673,6 +724,10 @@ section {
     }
 
     .project-card {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .education-card {
         grid-template-columns: minmax(0, 1fr);
     }
 }
